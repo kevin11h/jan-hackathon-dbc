@@ -1,0 +1,20 @@
+<link href={{url_for('.static', filename="bootstrap.min.css")}} rel="stylesheet">
+<script src={{url_for('.static', filename="bootstrap.min.js")}}></script>
+
+<div class="list-group">
+  <a class="list-group-item active">
+    <h1 class="list-group-item-heading">{{ name }}</h1>
+  </a>
+  <a  class="list-group-item">
+    <h4 class="list-group-item-heading">{{ address }}</h4>
+  </a>
+  <a class="list-group-item">
+    <h4 class="list-group-item-heading">{{ phone }}</h4>
+  </a>
+  <a class="list-group-item">
+    <p style="font-size: 3em">{{ rating }} &#10026; 's</p>
+  </a>
+  <a class="list-group-item">
+    <img src="{{ image }}" />
+  </a>
+</div>
